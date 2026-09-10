@@ -20,53 +20,38 @@
 
     <main>
         <section>
+            <span>* (Wajib diisi)</span>
             <h2>Tambah Anggota</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th rowspan="2">No.Anggota</th>
-                        <th rowspan="2">Nama</th>
-                        <th rowspan="2">Alamat</th>
-                        <th rowspan="2">No.HP</th>
-                        <th colspan="2">Jenis Kelamin</th>
-                        <th colspan="2">Aksi</th>
-                    </tr>
-                    <tr>
-                        <th>Perempuan</th>
-                        <th>Laki-Laki</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
-                    </tr>
-                    <tr>
-                        <td>A001</td>
-                        <td>Siti Aminah</td>
-                        <td>Malang</td>
-                        <td>0812xxxx</td>
-                        <td>v</td>
-                        <td></td>
-                        <td>
-                            <button type="button">Edit</button>
-                        </td>
-                        <td>
-                            <button type="button">Hapus</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>A002</td>
-                        <td>Budi Santoso</td>
-                        <td>batu</td>
-                        <td>0813xxxx</td>
-                        <td></td>
-                        <td>v</td>
-                        <td>
-                            <button type="button">Edit</button>
-                        </td>
-                        <td>
-                            <button type="button">Hapus</button>
-                        </td>
-                    </tr>
-                </thead>
-            </table>
+            <form method="POST" action="">
+                <p>
+                    <label for="nama">Nama</label><br>
+                    <input type="text" id="nama" name="nama_lengkap" required>
+                </p>
+                <p>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="nama" name="nama" required>
+                </p>
+                <p>
+                    <label for="no_anggota">No. Anggota</label><br>
+                    <input type="text" id="no_anggota" name="no_anggota" required>
+                </p>
+                <p>
+                    <label for="tanggal_lahir">Tanggal Lahir</label><br>
+                    <input type="datetime-local" value="dd/mm/yyyy hh:mm:ss" id="tanggal_lahir" name="tanggal_lahir" required>
+                </p>
+                <p>
+                    <label for="alamat">Alamat</label><br>
+                    <textarea id="alamat" rows="10" cols="30" name="alamat"></textarea>
+                    <input type="text" id="alamat" name="alamat" required>
+                </p>
+                <p>
+                    <label for="no_hp">No. HP</label><br>
+                    <input type="number" id="no_hp" name="no_hp" required>
+                </p>
+                <p>
+                    <button type="submit">Simpan</button>
+                </p>
+            </form>
         </section>
     </main>
 
@@ -74,5 +59,5 @@
         <p>&copy; 2026 SIMPUS-Mini &mdash; Jobsheet 1</p>
     </footer>
 </body>
-
+ 
 </html>
